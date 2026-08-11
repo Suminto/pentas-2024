@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Year Book Alumni 2024 — SMP BPK Penabur</title>
+<meta name="description" content="Buku tahunan digital Alumni SMP BPK Penabur angkatan 2024 — foto, video, dan kesan pesan kenangan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Caveat:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<a href="#alumni" class="skip-link">Lompat ke konten utama</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="brand-mark">BP</div>
+      <div class="brand-text">
+        <span class="t1">Year Book 2024</span>
+        <span class="t2" id="brandSchool">SMP BPK Penabur</span>
+      </div>
+    </div>
+    <nav class="links" id="navLinks">
+      <a href="#hero">Beranda</a>
+      <a href="#alumni">Alumni</a>
+      <a href="#galeri">Galeri Foto</a>
+      <a href="#video">Galeri Video</a>
+      <a href="#pesan">Kesan &amp; Pesan</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Angkatan 2024</span>
+      <h1 class="hero-title" id="heroTitle">Kenangan yang <em>tak lekang</em><br>oleh waktu.</h1>
+      <p class="hero-sub" id="heroSub">Buku tahunan digital untuk seluruh alumni SMP BPK Penabur angkatan 2024 — foto, video, dan pesan kenangan dalam satu tempat, bisa dibuka kapan saja.</p>
+      <div class="hero-cta">
+        <a href="#galeri" class="btn-primary">📷 Lihat Galeri Foto</a>
+        <a href="#alumni" class="btn-secondary">Cari Nama Alumni</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="num" id="statAlumni">-</div><div class="lbl">Alumni</div></div>
+        <div class="stat"><div class="num">2</div><div class="lbl">Kelas</div></div>
+        <div class="stat"><div class="num" id="statFoto">-</div><div class="lbl">Foto Kenangan</div></div>
+      </div>
+    </div>
+
+    <div class="corkboard" id="corkboardPhotos" aria-label="Kolase foto kenangan">
+      <!-- diisi otomatis oleh main.js -->
+    </div>
+  </div>
+</section>
+
+<section class="section" id="alumni">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-tag">Wajah-wajah Angkatan</div>
+        <div class="section-title">Profil Alumni</div>
+      </div>
+      <p class="section-desc">Cari teman sekelasmu, lihat kesan-pesan dan cita-citanya.</p>
+    </div>
+
+    <div class="alumni-bar">
+      <div class="search-box">
+        🔎 <input type="text" id="alumniSearch" placeholder="Cari nama alumni..." disabled aria-label="Cari nama alumni">
+      </div>
+      <div id="alumniChips">
+        <button class="chip active" data-kelas="Semua">Semua Kelas</button>
+        <button class="chip" data-kelas="9A">9A</button>
+        <button class="chip" data-kelas="9B">9B</button>
+      </div>
+    </div>
+
+    <div class="alumni-grid" id="alumniGrid">
+      <div class="empty-state">Memuat data alumni...</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="galeri" style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-tag">Kenangan Terekam</div>
+        <div class="section-title">Galeri Foto</div>
+      </div>
+      <p class="section-desc">Klik foto untuk melihat versi penuh &amp; keterangannya.</p>
+    </div>
+
+    <div class="filter-tabs" id="filterTabs"></div>
+
+    <div class="masonry" id="galeriGrid">
+      <div class="empty-state">Memuat galeri foto...</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="video">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-tag">Putar Kembali</div>
+        <div class="section-title">Galeri Video</div>
+      </div>
+      <p class="section-desc">Video ditayangkan langsung dari YouTube, ringan diakses dari HP.</p>
+    </div>
+
+    <div class="video-row" id="videoGrid">
+      <div class="empty-state">Memuat video...</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pesan">
+  <div class="wrap">
+    <div class="wall">
+      <div class="wall-head">
+        <div class="section-tag">Dari Hati ke Hati</div>
+        <h2>Kesan &amp; Pesan</h2>
+      </div>
+      <div class="wall-grid" id="wallGrid">
+        <div class="empty-state" style="color:var(--paper);opacity:.7;">Memuat kesan &amp; pesan...</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-credit">© 2024 Year Book Alumni SMP BPK Penabur · Dibuat dengan ❤️ oleh panitia angkatan</div>
+    <div class="footer-sign">Suminto with Claude</div>
+  </div>
+</footer>
+
+<!-- ===== LIGHTBOX GALERI FOTO ===== -->
+<div class="lightbox-overlay" id="lightboxOverlay" role="dialog" aria-modal="true" aria-label="Perbesar foto">
+  <button class="lb-close" id="lightboxClose" aria-label="Tutup">&times;</button>
+  <div class="lightbox-box">
+    <div class="lightbox-img-wrap">
+      <img id="lightboxImg" src="" alt="">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+    <div class="lightbox-controls">
+      <button class="lb-btn" id="lightboxPrev" aria-label="Foto sebelumnya">&#8592;</button>
+      <button class="lb-btn" id="lightboxNext" aria-label="Foto berikutnya">&#8594;</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL VIDEO ===== -->
+<div class="video-modal-overlay" id="videoModalOverlay" role="dialog" aria-modal="true" aria-label="Putar video">
+  <div class="video-modal-box">
+    <div class="video-modal-frame" id="videoModalFrame"></div>
+    <button class="vm-close" id="videoModalClose">Tutup</button>
+  </div>
+</div>
+
+<script src="/assets/js/main.js"></script>
+
+<!-- Netlify Identity - diperlukan agar tombol login admin panel berfungsi -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function (user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function () {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>

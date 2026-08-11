@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "nama": "Pak Suminto", "jabatan": "Wali Kelas 9A", "pesan": "Kalian angkatan paling kompak yang pernah Bapak ajar. Sukses selalu!" },
+    { "nama": "Bu Dewi", "jabatan": "Kepala Sekolah", "pesan": "Selamat menempuh jenjang baru. Jangan lupa jaga silaturahmi ya!" },
+    { "nama": "Bu Rina", "jabatan": "Wali Kelas 9B", "pesan": "Bangga sama kalian semua. Selamat berjuang di sekolah baru!" },
+    { "nama": "Angeline", "jabatan": "Alumni 9A", "pesan": "Terima kasih atas 3 tahun penuh cerita. See you on top!" },
+    { "nama": "Kevin", "jabatan": "Alumni 9B", "pesan": "Tetap kompak walau udah pisah sekolah ya, geng!" },
+    { "nama": "Pak Budi", "jabatan": "Guru Matematika", "pesan": "Semoga kalian jadi pribadi yang berdampak di mana pun berada." }
+  ]
+}

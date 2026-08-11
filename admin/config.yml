@@ -1,0 +1,95 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Media (foto) yang diupload lewat admin panel akan disimpan di sini
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "pengaturan"
+    label: "⚙️ Pengaturan Umum"
+    files:
+      - file: "content/settings.json"
+        label: "Pengaturan Website"
+        name: "settings"
+        fields:
+          - { label: "Judul Website", name: "judul_web", widget: "string" }
+          - { label: "Nama Sekolah", name: "nama_sekolah", widget: "string" }
+          - { label: "Tagline / Deskripsi Singkat", name: "tagline", widget: "text" }
+
+  - name: "alumni"
+    label: "🎓 Profil Alumni"
+    files:
+      - file: "content/alumni.json"
+        label: "Daftar Alumni"
+        name: "alumni"
+        fields:
+          - label: "Daftar Alumni"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.nama}} - {{fields.kelas}}"
+            fields:
+              - { label: "Nama Lengkap", name: "nama", widget: "string" }
+              - label: "Kelas"
+                name: "kelas"
+                widget: "select"
+                options: ["9A", "9B"]
+              - { label: "Foto", name: "foto", widget: "image", required: false, hint: "Gunakan foto yang sudah dikompres (WebP) agar website tetap ringan." }
+              - { label: "Kesan Singkat", name: "kesan", widget: "string", required: false }
+              - { label: "Cita-cita", name: "citacita", widget: "string", required: false }
+              - { label: "Instagram (opsional)", name: "instagram", widget: "string", required: false }
+
+  - name: "galeri_foto"
+    label: "🖼️ Galeri Foto"
+    files:
+      - file: "content/galeri-foto.json"
+        label: "Daftar Foto"
+        name: "galeri_foto"
+        fields:
+          - label: "Daftar Foto"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.caption}} ({{fields.kategori}})"
+            fields:
+              - { label: "Foto", name: "gambar", widget: "image", hint: "Gunakan foto yang sudah dikompres (WebP) agar website tetap ringan." }
+              - label: "Kategori"
+                name: "kategori"
+                widget: "select"
+                options: ["Wisuda", "Study Tour", "Class Meeting", "Perpisahan", "Lainnya"]
+              - { label: "Keterangan Foto", name: "caption", widget: "string", required: false }
+              - { label: "Tanggal", name: "tanggal", widget: "date", required: false }
+
+  - name: "galeri_video"
+    label: "🎬 Galeri Video"
+    files:
+      - file: "content/galeri-video.json"
+        label: "Daftar Video"
+        name: "galeri_video"
+        fields:
+          - label: "Daftar Video"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.judul}}"
+            fields:
+              - { label: "Judul Video", name: "judul", widget: "string" }
+              - { label: "Link YouTube", name: "link_youtube", widget: "string", hint: "Tempel link YouTube lengkap, contoh: https://www.youtube.com/watch?v=xxxxx" }
+              - { label: "Deskripsi Singkat", name: "deskripsi", widget: "string", required: false }
+
+  - name: "kesan_pesan"
+    label: "💌 Kesan & Pesan"
+    files:
+      - file: "content/kesan-pesan.json"
+        label: "Daftar Kesan & Pesan"
+        name: "kesan_pesan"
+        fields:
+          - label: "Daftar Kesan & Pesan"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.nama}} - {{fields.jabatan}}"
+            fields:
+              - { label: "Nama", name: "nama", widget: "string" }
+              - { label: "Jabatan / Status", name: "jabatan", widget: "string", hint: "Contoh: Wali Kelas 9A, Kepala Sekolah, Alumni 9B" }
+              - { label: "Isi Pesan", name: "pesan", widget: "text" }

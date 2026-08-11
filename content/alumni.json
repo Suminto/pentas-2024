@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "nama": "Kevin Wijaya", "kelas": "9A", "foto": "", "kesan": "3 tahun paling seru!", "citacita": "Pilot", "instagram": "" },
+    { "nama": "Angeline Putri", "kelas": "9A", "foto": "", "kesan": "Makasih buat semua kenangannya", "citacita": "Dokter", "instagram": "" },
+    { "nama": "Michael Tanoto", "kelas": "9A", "foto": "", "kesan": "Sukses buat kita semua!", "citacita": "Pengusaha", "instagram": "" },
+    { "nama": "Sabrina Halim", "kelas": "9B", "foto": "", "kesan": "See you on top, guys!", "citacita": "Arsitek", "instagram": "" },
+    { "nama": "Daniel Chandra", "kelas": "9B", "foto": "", "kesan": "Ga akan lupa masa-masa ini", "citacita": "Insinyur", "instagram": "" },
+    { "nama": "Grace Amelia", "kelas": "9B", "foto": "", "kesan": "Terima kasih untuk semuanya", "citacita": "Guru", "instagram": "" }
+  ]
+}

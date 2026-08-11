@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "gambar": "", "kategori": "Wisuda", "caption": "Prosesi Wisuda Angkatan 2024", "tanggal": "2024-06-14" },
+    { "gambar": "", "kategori": "Study Tour", "caption": "Kunjungan ke Kawah Putih", "tanggal": "2024-03-10" },
+    { "gambar": "", "kategori": "Class Meeting", "caption": "Lomba Futsal Antar Kelas", "tanggal": "2024-05-02" },
+    { "gambar": "", "kategori": "Perpisahan", "caption": "Foto Bersama Wali Kelas", "tanggal": "2024-06-15" },
+    { "gambar": "", "kategori": "Wisuda", "caption": "Penyerahan Ijazah", "tanggal": "2024-06-14" },
+    { "gambar": "", "kategori": "Study Tour", "caption": "Trans Studio Bandung", "tanggal": "2024-03-11" }
+  ]
+}
